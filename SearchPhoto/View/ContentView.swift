@@ -18,7 +18,7 @@ struct ContentView: View {
                     ProgressView()
                 }
                 if viewModel.showErrorMsg {
-                    Text("error occured, please try again")
+                    Text(viewModel.errorMsg)
                 }
                 List {
                     ForEach(viewModel.photoList.items,  id: \.id) { item in
